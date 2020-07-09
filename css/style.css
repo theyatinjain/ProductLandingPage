@@ -152,9 +152,8 @@ body {
 }
 
 /*------------------------- HEADER END -------------------------------*/
-section {
+.main section {
     padding: 5rem 2rem 5rem 2rem;
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +164,7 @@ section .section-title {
     font-family: 'Comfortaa', cursive;
     border-bottom: 2px solid #107a02;
     color: #30b11f;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     padding: 0.5rem 0;
     position: relative;
     cursor: default;
@@ -236,3 +235,48 @@ section .section-title h1:hover {
 
 /*---------- FEATURES ---------*/
 
+.features .feature-cards {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.feature-cards .card-box {
+    max-width: 17rem;
+    height: 20rem;
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    background: linear-gradient(135deg, rgba(220, 227, 91, 0.5) 40%, rgba(69, 182, 73, 0.6) 74%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.feature-cards .card-box:hover {
+    transform: translateY(-1rem) scale(1.05);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-box ion-icon {
+    font-size: 7rem;
+    color: #18a518;
+    margin-bottom: 1rem;
+}
+
+.card-box .card-title {
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0.7rem;
+}
+
+.card-box .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
