@@ -371,7 +371,7 @@ section .section-title h1:hover {
     outline: none;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(to right, #3CA55C 0%, #B5AC49 51%, #3CA55C 100%);
     background-size: 200% auto;
     transition: all 0.3s ease-in-out;
@@ -380,7 +380,7 @@ section .section-title h1:hover {
 
 .card-text .card-btn:hover {
     background-position: right center;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -389,3 +389,200 @@ section .section-title h1:hover {
 }
 
 /*---------------- FOOTER -----------------*/
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 2rem;
+}
+
+.footer .footer-company {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 2rem 2rem 2rem;
+    background-color: #dbdbdb;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+
+.footer-company .company-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+.company-box .logo-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.company-box .logo-box .logo-img {
+    max-width: 4rem;
+    max-height: 4rem;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.company-box .logo-box .logo-name {
+    font-family: 'Chewy', cursive;
+    letter-spacing: 3px;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f4d03f;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #F4D03F;
+    background: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.company-box .social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-links .social-link {
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.social-links .social-link ion-icon {
+    transition: all 0.3s ease;
+    color: #30b11f;
+    font-size: 2rem;
+}
+
+.social-links .social-link ion-icon:hover,
+.social-links .social-link ion-icon:active {
+    color: #107a02;
+}
+
+.footer-company .contact-box {
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-company .newsletter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-box .newsletter-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-box .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.newsletter-box .form input[type=email] {
+    padding: 0.5rem 0.6rem;
+    max-width: 15rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-box .form input[type=submit] {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+    background-size: 200% auto;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.newsletter-box .form input[type=submit]:hover {
+    background-position: right center;
+}
+
+.contact-box .contact-address {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.contact-box .mail-link,
+.contact-box .mail-link:visited {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #30b11f;
+    transition: all 0.6s ease;
+}
+
+.contact-box .mail-link:hover,
+.contact-box .mail-link:active {
+    color: #107a02;
+}
+
+.footer .footer-webd {
+    width: 100%;
+    padding: 0.4rem 0;
+    text-align: center;
+    background-color: #000000;
+}
+
+.footer .footer-webd .webd-text {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    font-weight: 700;
+}
+
+.footer .footer-webd .webd-text ion-icon {
+    color: #f42b11;
+    font-size: 1.3rem;
+}
+
+.footer .footer-webd .webd-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+}
+
+.footer .footer-webd .webd-text a:hover {
+    color: #b8b8b8;
+    font-weight: 500;
+}
