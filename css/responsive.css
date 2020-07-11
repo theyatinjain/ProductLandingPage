@@ -82,8 +82,8 @@
     }
 
     .feature-cards .card-box {
-        margin: 0.5rem;
-        max-width: 12.5rem;
+        margin: 1rem;
+        max-width: 22rem;
     }
 
     .feature-cards .card-box ion-icon {
