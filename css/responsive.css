@@ -78,7 +78,16 @@
     }
 
     .about .about-video {
-        width: 30rem;
+       width: 30rem;
+    }
+
+    .feature-cards .card-box {
+        margin: 0.5rem;
+        max-width: 12.5rem;
+    }
+
+    .feature-cards .card-box ion-icon {
+        font-size: 5rem;
     }
 
     .footer-company .company-box {
